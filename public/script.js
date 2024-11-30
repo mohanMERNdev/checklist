@@ -1,6 +1,6 @@
 async function fetchChecklistResults() {
     try {
-      const response = await fetch("/evaluate");
+      const response = await fetch("https://checklist-cbu0.onrender.com/evaluate");
       const results = await response.json();
   
       const container = document.getElementById("checklist-container");
